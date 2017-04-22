@@ -3,5 +3,12 @@
 
   - tasks:
 
-    -name: Install something
-      -win_feature: dns
+    - name: Create PowerShell directory
+      win_file:
+        path: C:\PowerShell
+        state: directory
+
+    - name: Create ReadMe file in PowerShell directory
+      win_file:
+        path: C:\PowerSHell\
+        state: file

@@ -1,8 +1,8 @@
 function New-AnsibleDirectory
 {
     param(
-        $Path = ".",
-        $Role = "common"
+        [string]$Path = ".",
+        [string]$Role = "common"
     )
 
     $directories = "group_vars",
